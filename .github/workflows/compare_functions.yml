@@ -1,4 +1,4 @@
-name: Hello World
+name: Compare Func
 on: push
 jobs:
   hello:
@@ -9,3 +9,4 @@ jobs:
           CONTAINS_FUNC: ${{ contains('Hello', 'ell')}}
           STARTS_WITH_FUNC: ${{startsWith('Hello', 'He')}}
           ENDS_WITH_FUNC: ${{ endsWith('Hello', 'lo')}}
+          RESULT_FALSE_ENDS_WITH_FUNC: ${{ endsWith('Hello', 'le')}}
