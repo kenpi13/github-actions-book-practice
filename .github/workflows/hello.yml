@@ -11,4 +11,7 @@ jobs:
           set -x
           date
           hostname
+      - run: echo "::error::error-message"
+      - run: echo "::warning::error-message"
+      - run: echo "::notice::error-message"
 
