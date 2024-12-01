@@ -14,4 +14,8 @@ jobs:
       - run: echo "::error::error-message"
       - run: echo "::warning::error-message"
       - run: echo "::notice::error-message"
+      - run: | # markdown
+          echo "## Example title :rocket:" >> "${GITHUB_STEP_SUMMARY}"
+          echo "- first line" >> "${GITHUB_STEP_SUMMARY}"
+          echo "- second line" >> "${GITHUB_STEP_SUMMARY}"
 
