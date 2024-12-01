@@ -7,3 +7,8 @@ jobs:
       - run: echo "hello world"
       - uses: actions/checkout@v4
       - run: echo "::debug::hello_world"
+      - run: |
+          set -x
+          date
+          hostname
+
